@@ -2,21 +2,19 @@ import React, { useState, useEffect } from 'react';
 import { API_URL } from './forms/data/apiPath';
 
 const AllProducts = () => {
-  const [products, setProducts] = useState([]);  // state to store fetched products
+  const [products, setProducts] = useState([]);  
 
-  // Fetch the products from the API
   const AllProductshandler = async () => {
     const id = localStorage.getItem('firmid');
     console.log(id);
     
     try {
       const response = await fetch(`${API_URL}/vendor/${id}/products`);
-      const data = await response.json();  // assume response is in JSON format
+      const data = await response.json();  
 
-      // Check if the 'products' field exists in the response
       if (data && data.products) {
-        setProducts(data.products);  // Update state with fetched products
-        console.log(data.products);   // Log the fetched products
+        setProducts(data.products);  
+        console.log(data.products);  
       } else {
         console.error('No products found');
       }
@@ -25,7 +23,7 @@ const AllProducts = () => {
     }
   };
 
-  // Fetch products once the component is mounted
+
   useEffect(() => {
     console.log('Fetching products...');
     AllProductshandler();

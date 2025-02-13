@@ -10,28 +10,25 @@ const AddFirm = ({ showaddproducthandler }) => {
     const [image, setImage] = useState(null);
     const [token, setToken] = useState("");
 
-    // Fetch token from local storage on mount
     useEffect(() => {
         setToken(localStorage.getItem('token'));
     }, []);
 
-    // Handle checkbox change for category
     const handleCategoryChange = (e) => {
         const value = e.target.value;
         setCategory(prevCategory => 
             prevCategory.includes(value) 
-                ? prevCategory.filter(item => item !== value)  // Deselect
-                : [...prevCategory, value]  // Select
+                ? prevCategory.filter(item => item !== value)  
+                : [...prevCategory, value]  
         );
     };
 
-    // Handle checkbox change for region
     const handleRegionChange = (e) => {
         const value = e.target.value;
         setRegion(prevRegion => 
             prevRegion.includes(value) 
-                ? prevRegion.filter(item => item !== value)  // Deselect
-                : [...prevRegion, value]  // Select
+                ? prevRegion.filter(item => item !== value)  
+                : [...prevRegion, value]  
         );
     };
 
@@ -47,8 +44,8 @@ const AddFirm = ({ showaddproducthandler }) => {
             const formData = new FormData();
             formData.append('firname', firname);
             formData.append('area', area);
-            formData.append('category', category.join(","));  // Convert array to string
-            formData.append('region', region.join(","));  // Convert array to string
+            formData.append('category', category.join(","));  
+            formData.append('region', region.join(",")); 
             formData.append('offer', offer);
             formData.append('image', image);
 

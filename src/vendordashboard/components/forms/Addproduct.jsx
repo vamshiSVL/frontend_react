@@ -23,7 +23,7 @@ const AddProduct = () => {
   const formData = new FormData();
   formData.append('productname', productname);
   formData.append('price', price);
-  formData.append('category',category); // Convert array to JSON string
+  formData.append('category',category); 
   formData.append('description', description);
   formData.append('image', image);
 
