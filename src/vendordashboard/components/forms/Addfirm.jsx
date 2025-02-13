@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { API_URL } from './data/apiPath';
 
-const AddFirm = ({ showaddproducthandler }) => {
+const Addfirm = ({ showaddproducthandler }) => {
     const [firname, setFirname] = useState("");
     const [area, setArea] = useState("");
     const [category, setCategory] = useState([]);
@@ -149,4 +149,4 @@ const AddFirm = ({ showaddproducthandler }) => {
     );
 };
 
-export default AddFirm;
+export default Addfirm;

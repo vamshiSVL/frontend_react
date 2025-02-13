@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 import Login from '../components/forms/Login'
 import Register from '../components/forms/Register'
-import AddFirm from '../components/forms/AddFirm'
+import AddFirm from '../components/forms/Addfirm'
 import AddProduct from '../components/forms/AddProduct'
 import AllProducts from '../components/AllProducts'
 
