@@ -1,0 +1,207 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* NAVBAR SECTION */
+
+.navsec{
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: large;
+  padding: 0 15px;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.company{
+  padding-left: 20px;
+}
+
+.company:hover, span:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  color: orangered;
+}
+
+/* SIDEBAR SECTION */
+
+.sidesec{
+  background-color: black;
+  color: white;
+  width: 200px;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  bottom: 0;
+}
+
+.list{
+  list-style: none;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+li:hover{
+  text-decoration: underline;
+  color: orangered;
+}
+
+.cset{
+  text-decoration: underline;
+  color: aqua;
+}
+
+/* collection section */
+
+.collection{
+  display: flex;
+}
+
+/* vendor login */
+
+.login-page{
+  margin-top: 60px;
+  margin-left: 230px;
+  height: 95vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 600px;
+  width: 800px;
+  box-shadow: 20px 5px 40px black;
+}
+
+
+.box-add{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 700px;
+  width: 800px;
+  box-shadow: 20px 20px 40px black;
+}
+
+.img-pro{
+  width: 100%;
+  
+}
+
+.box1-pro{
+  width: 250px;
+}
+
+.box2-pro{
+  display: flex;
+  flex-direction: column;
+  align-items:baseline;
+  justify-content:space-evenly;
+  margin-left: 50px;
+}
+
+.box-pro{
+  margin-left: 250px;
+  margin-top: 100px;
+  display: flex;
+}
+
+.form_div{
+  background-color: black;
+  color: white;
+  height: 500px;
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+}
+
+
+.form_div-add{
+  background-color: black;
+  color: white;
+  height: 650px;
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.page{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  line-height: 40px;
+  width: 200px;
+}
+
+
+.page-add{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  line-height: 40px;
+  width: 300px;
+}
+
+input{
+  padding: 10px;
+  background: transparent;
+  color: white;
+  border-bottom: 1px solid white;
+  box-shadow: 0px 5px 40px gray;
+}
+
+.check{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.check-1,.check-2{
+  width: 20px;
+  height: 20px;
+}
+
+.name{
+  width: 700px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.h1{
+  text-shadow: 20px 10px 20px black;
+}
+
+.submit{
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.submit:hover{
+  color: black;
+  background-color: white;
+  transition: 1.6s;
+}
